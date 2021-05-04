@@ -1,8 +1,8 @@
-package de.gedoplan.javaland.dreamteam.api;
+package de.gedoplan.dreamteam.api;
 
-import de.gedoplan.javaland.dreamteam.entity.Planet;
-import de.gedoplan.javaland.dreamteam.persistence.PlanetRepository;
-import de.gedoplan.javaland.dreamteam.service.PlanetService;
+import de.gedoplan.dreamteam.entity.Planet;
+import de.gedoplan.dreamteam.persistence.PlanetRepository;
+import de.gedoplan.dreamteam.service.PlanetService;
 
 import java.util.List;
 
@@ -14,6 +14,8 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
+import org.eclipse.microprofile.metrics.annotation.Counted;
+
 @ApplicationScoped
 @Path("planet")
 @Produces(MediaType.APPLICATION_JSON)
@@ -23,6 +25,7 @@ public class PlanetEndpoint {
   PlanetRepository planetRepository;
 
   @GET
+  @Counted
   public List<Planet> get() {
     return this.planetRepository.findAll();
   }

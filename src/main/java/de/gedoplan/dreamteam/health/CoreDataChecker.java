@@ -1,6 +1,6 @@
-package de.gedoplan.javaland.dreamteam.health;
+package de.gedoplan.dreamteam.health;
 
-import de.gedoplan.javaland.dreamteam.persistence.PlanetRepository;
+import de.gedoplan.dreamteam.persistence.PlanetRepository;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;

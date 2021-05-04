@@ -1,6 +1,6 @@
-package de.gedoplan.javaland.dreamteam.persistence;
+package de.gedoplan.dreamteam.persistence;
 
-import de.gedoplan.javaland.dreamteam.entity.Planet;
+import de.gedoplan.dreamteam.entity.Planet;
 
 import java.util.List;
 

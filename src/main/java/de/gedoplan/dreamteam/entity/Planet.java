@@ -1,4 +1,4 @@
-package de.gedoplan.javaland.dreamteam.entity;
+package de.gedoplan.dreamteam.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

@@ -1,7 +1,7 @@
-package de.gedoplan.javaland.dreamteam.service;
+package de.gedoplan.dreamteam.service;
 
-import de.gedoplan.javaland.dreamteam.entity.Planet;
-import de.gedoplan.javaland.dreamteam.persistence.PlanetRepository;
+import de.gedoplan.dreamteam.entity.Planet;
+import de.gedoplan.dreamteam.persistence.PlanetRepository;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
