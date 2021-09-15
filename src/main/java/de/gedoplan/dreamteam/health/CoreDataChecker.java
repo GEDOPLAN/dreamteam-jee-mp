@@ -20,7 +20,7 @@ public class CoreDataChecker implements HealthCheck {
   public HealthCheckResponse call() {
     return HealthCheckResponse
         .named("Core data available")
-        .state(!this.planetRepository.findAll().isEmpty())
+        .status(!this.planetRepository.findAll().isEmpty())
         .build();
   }
 
